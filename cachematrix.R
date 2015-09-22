@@ -29,3 +29,20 @@ cacheSolve <- function(x, ...) {
         x$setsolve(m)
         m
 }
+
+## Sample run
+## x <- matrix(1:4, 2, 2)
+## > a <- makeCacheMatrix(x)
+## > a$get()
+##      [,1] [,2]
+## [1,]    1    3
+## [2,]    2    4
+## > cacheSolve(a)
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
+## > cacheSolve(a)
+## getting cached data
+##      [,1] [,2]
+## [1,]   -2  1.5
+## [2,]    1 -0.5
